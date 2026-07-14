@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Lib3ro</title>
+        <item>
+            <title>99.0</title>
+            <pubDate>Tue, 14 Jul 2026 11:34:21 +0200</pubDate>
+            <sparkle:version>99</sparkle:version>
+            <sparkle:shortVersionString>99.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro-99.0.zip" length="7940609" type="application/octet-stream" sparkle:edSignature="IHcIH+ZoHF1z9NqmyuS5Mb2rlmEnBNK7spA5Sk0fsw7B95mT77Sui1oCHTrauN5QiF8x3od8NNFwFct3nXaGCg=="/>
+        </item>
+    </channel>
+</rss>
