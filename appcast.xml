@@ -8,6 +8,7 @@
             <sparkle:version>99</sparkle:version>
             <sparkle:shortVersionString>99.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro-99.0.html</sparkle:releaseNotesLink>
             <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro-99.0.zip" length="7940609" type="application/octet-stream" sparkle:edSignature="IHcIH+ZoHF1z9NqmyuS5Mb2rlmEnBNK7spA5Sk0fsw7B95mT77Sui1oCHTrauN5QiF8x3od8NNFwFct3nXaGCg=="/>
         </item>
     </channel>
