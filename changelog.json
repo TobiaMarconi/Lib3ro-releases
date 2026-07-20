@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "versione": "0.6",
+    "data": "2026-07-06",
+    "note": "Prima versione distribuita al pubblico, in closed alpha di test. Non contiene un elenco di modifiche: descrive cosa include la 0.6 e fa da riferimento per le versioni successive.\n\n**Incluso**\n\n- Dashboard: incassato, netto stimato, tasse da accantonare, distanza dal tetto del forfettario, andamento mensile.\n- Clienti: anagrafica con dati di fatturazione.\n- Progetti: tipo di retribuzione e piano pagamenti per progetto.\n- Rendicontazione: registrazione delle ore e calcolo del compenso maturato.\n- Fatture: lettura e generazione di XML FatturaPA, stati di pagamento.\n- Entrate: registro per data di incasso.\n- Tasse: calcolo di imposta sostitutiva e contributi INPS, con scadenzario dei versamenti.\n- Spese: import dei movimenti bancari e categorizzazione automatica.\n- Investimenti: portafoglio con rendimento e dividendi, simulatore.\n- Moduli Attività, Fisco e Finanze attivabili singolarmente dalle impostazioni.\n- Import ed export in CSV e XLSX, backup completo del database.\n- Ricerca globale con ⌘K, tema chiaro e scuro con colore d'accento.\n\n**Note**\n\n- I dati risiedono in un database locale sul Mac. Nessuna sincronizzazione cloud.\n- L'aggiornamento alle versioni successive è manuale: va scaricato il nuovo pacchetto. L'aggiornamento automatico arriva dopo la 0.6."
+  }
+]
