@@ -3,6 +3,140 @@
     <channel>
         <title>Lib3ro</title>
         <item>
+            <title>0.11</title>
+            <pubDate>Wed, 07 Oct 2026 16:12:32 +0200</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[### Nuove Feature
+
+**Simulazione delle tasse del prossimo anno:**
+
+- nella pagina Tasse ora puoi selezionare l'anno prossimo e vedere una proiezione simulata del prossimo anno di pagamenti in base al tuo regime fiscale.
+  - l'app stima il lordo dell'anno in corso dal ritmo dei tuoi incassi, oppure, finché i dati sono pochi, da quanto hai incassato l'anno prima, e ti dice sempre su quale base ha fatto il calcolo;
+  - se preferisci, inserisci tu un importo con «Modifica importo» e torni alla stima con «Ripristina»;
+  - se il lordo stimato supera 85.000 o 100.000 €, l'app ti avvisa che le regole del forfettario non varrebbero più.
+
+**Confronto delle entrate fra diversi anni:**
+
+- Nuova scheda “Confronto” nella pagina Entrate. Scegli fino a 4 anni che vuoi mettere a confronto, anche lontani tra loro, dove prima avevi solo il confronto con l'anno precedente;
+  - per mese: un grafico a barre raggruppate e una tabella con un anno per colonna e la differenza tra due anni;
+  - per cliente: i clienti principali a confronto, con la quota di ciascuno. Con un clic apri le fatture del cliente in quel periodo, con un doppio clic la sua pagina;
+  - passando il mouse su una differenza ne vedi subito il valore in euro.
+
+**Entrate attese dalle fatture emesse e non incassate:**
+
+- con l'interruttore «Includi attese» nella scheda Mesi di Entrate vedi come si distribuiranno le entrate dei prossimi mesi contando anche le fatture emesse e non ancora incassate, ciascuna nel mese della sua scadenza. Prima, per avere questa previsione, dovevi segnare le fatture come saldate in anticipo; ora lo stato della fattura resta quello reale.
+
+**Andamento del valore di un cliente nel tempo:**
+
+- nella pagina di un cliente, la nuova scheda Andamento mostra anno per anno, e poi mese per mese, ore, rendicontato e incassato. Selezionando un periodo vedi da dove vengono quei numeri: i progetti con le loro ore, le fatture incassate e il collegamento a Rendicontazione già filtrata.
+
+### Miglioramenti
+
+**Data d'incasso durante l’import delle fatture:**
+
+- dopo aver importato le fatture, l'app ti propone di segnare come incassate quelle ancora aperte, dalla schermata di onboarding o con un banner in Fatturazione. Prima dovevi cercare da solo le azioni multiple;
+- quando segni una fattura come saldata, l'app ti dice con un piccolo avviso quale data d'incasso ha usato e perché (per esempio «alla scadenza»), e non ti propone mai una data nel futuro.
+
+**Soglie del forfettario più chiare:**
+
+- in Dashboard la barra «Soglia forfettario» cambia colore oltre 80.000 € e oltre 85.000 €, e vedi un solo avviso alla volta, il più importante. Prima la stessa soglia aveva due valori diversi e la barra e l'avviso riportavano percentuali diverse;
+- se superi 100.000 € incassati sfondando il tetto del forfettario, l'app te lo segnala con un avviso bloccante che compare in qualunque pagina, una volta all'anno;
+- la proiezione di fatturato tiene conto anche della stagionalità del tuo anno precedente: se di solito incassi molto a fine anno, a giugno la proiezione non ti dà più un valore troppo basso.
+
+**Confronto con l'anno prima allo stesso giorno:**
+
+- nelle card di Entrate e in Dashboard l'anno in corso si confronta con l'anno precedente fino alla stessa data («vs 2025 al 26/9»), e non più con l'anno intero. Prima, fino a dicembre, la differenza risultava quasi sempre negativa.
+
+**Miglior coerenza nelle etichette dei numeri:**
+
+- ogni numero ha lo stesso nome in tutte le pagine: «Rendicontato» per il lavoro svolto sui progetti, «Da incassare», «Residuo» dopo una nota di credito, «Pianificato» per le rate del piano;
+- ogni netto ti dice su cosa è calcolato, e quando un numero non è calcolabile l'app ti spiega il motivo invece di mostrare solo un trattino;
+- in Dashboard il netto dell'anno è lo stesso della pagina Tasse, anche quando è negativo;
+- nel pannello laterale di un cliente le card dei progetti mostrano il rendicontato, insieme al tipo e alla tariffa con l'unità di misura. Prima c'erano due cifre senza spiegazione.
+- tante altre modifiche in tutta l’interfaccia.
+
+**Velocità delle query con molti dati:**
+
+- i fogli «Collega attività» e «Collega pagamento» delle fatture si aprono subito anche con centinaia di voci (prima servivano fino a 15 secondi), e la ricerca ignora gli accenti;
+- nelle tabelle Rendicontazione, Fatturazione, Clienti e Progetti i filtri e la ricerca rispondono più velocemente anche con migliaia di righe.
+
+**Nuova regolamentazione dal 2027:**
+
+- per le fatture emesse dal 1° gennaio 2027 l'app indica, nell'XML e nel PDF, il nuovo riferimento normativo del regime forfettario (D.Lgs. 117/2026), insieme a quello precedente che il cliente già conosce.
+
+**Rifiniture delle tabelle:**
+
+- nelle colonne numeriche anche l'intestazione è allineata a destra;
+- eventuali tooltip compaiono dopo mezzo secondo di hover invece che dopo il lungo ritardo di default di sistema;
+- il separatore delle migliaia compare anche nei numeri a quattro cifre;
+- nel pannello del mese di Entrate i nomi lunghi dei clienti non vengono più troncati.
+
+### Bug fix
+
+**Stati di clienti, progetti e attività si disallineavano:**
+
+- ora lo stato di un progetto segue i suoi periodi di attività: badge, selettore e filtri riportano sempre lo stesso stato, mentre prima potevano essere in disaccordo;
+- ora quando metti in pausa, chiudi o riattivi un cliente, l'app ti chiede se applicare la scelta anche ai suoi progetti, e quando lo riattivi puoi lasciare i progetti in pausa;
+- ora lo stato di un'attività collegata a una fattura lo decide sempre la fattura: non rischi più di trovarlo diverso a seconda della pagina in cui lo guardi.
+
+**Aliquota dell'imposta sostitutiva:**
+
+- l'app applicava a tutti gli anni l'aliquota valida oggi: chi aveva aperto la partita IVA da più di cinque anni vedeva gli anni agevolati calcolati al 15% invece che al 5%. Ora ogni anno usa l'aliquota che gli spetta.
+
+**Scadenze fiscali nei giorni festivi:**
+
+- le scadenze che cadono in un giorno festivo slittano al primo giorno lavorativo, come già succedeva per sabato e domenica, per tutti gli enti. Nel calendario c'è anche il 4 ottobre, festivo dal 2026.
+
+**Incassato dei progetti:**
+
+- nei progetti a ore l'incassato non teneva conto delle fatture collegate alle attività, e le note di credito entravano nel dovuto con il segno sbagliato. Ora l'incassato è corretto e coincide tra lista, pagina e pannello laterale del progetto, mentre prima il pannello ne mostrava uno diverso;
+- nei progetti a corpo le quote delle attività sono arrotondate al centesimo, così le somme tornano anche a video.
+
+**Importi delle attività:**
+
+- se davi il prezzo a un progetto a ore dopo aver importato le attività, queste restavano a 0 €. Ora l'importo segue sempre ore e tariffa, comunque modifichi il progetto o l'attività;
+- il costo di riferimento di un'attività nuova compare subito, mentre prima restava vuoto fino al riavvio dell'app.
+
+**Fatture scadute e da incassare:**
+
+- una fattura senza scadenza, o già stornata per intero, non risulta più scaduta, e il giorno della scadenza non conta ancora come ritardo;
+- una nota di credito non compare più tra le fatture in attesa di incasso.
+
+**PDF (copia di cortesia) delle fatture con bollo:**
+
+- il PDF riportava un imponibile di 2 € più basso della somma delle voci. Ora l'imponibile è corretto, e il bollo non compreso nel totale compare come nota sotto il Totale, così i conti tornano anche a colpo d'occhio.
+
+**Anni vuoti in Rendicontazione e Fatture:**
+
+- il selettore mostra solo gli anni che contengono voci. Prima, su un anno vuoto, la pagina ti invitava ad aggiungere la prima attività anche se ne avevi centinaia negli anni precedenti. Quando crei una voce o la raggiungi da un link, l'app ti porta all'anno giusto e te la mostra selezionata.
+
+**Coefficiente di redditività:**
+
+- quando togli la modifica manuale, l'app torna al coefficiente del tuo codice ATECO invece di continuare a usare il valore manuale.
+
+**Investimenti da ribilanciare:**
+
+- la Dashboard segnala gli stessi investimenti da ribilanciare della pagina Portafoglio, con la stessa soglia che hai impostato.
+
+**Import da CSV:**
+
+- un valore che non è un numero non diventa più 0 in silenzio: l'app scarta la riga e te la segnala. Le istruzioni sulle percentuali ora coincidono con l'esempio.
+
+**Distribuzione:**
+
+- la configurazione della Distribuzione delle entrate è una sola, impostata di partenza con le tasse al 24,9%. Prima Parametri, Conti ed Entrate potevano usarne di diverse, e il profilo rischiava di duplicarsi.
+]]></description>
+            <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro-0.11.dmg" length="10757878" type="application/octet-stream" sparkle:edSignature="3gQRnJtUSzGWTAx788l3DkwsAT3Anu/yD7L4MdtqUns8PFN3aPpBBGUbf+3LpogcWHunfVATGqGITVsPE67sAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro6-5.delta" sparkle:deltaFrom="5" length="2939534" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="VvGTbjWL98CpKVLu0lbL4jKJnJ5gNYKZeLix0VJc+1zQR5gWjxfzkYjIVO8gH22aUoALaeXYLOYIHGHfipDICQ=="/>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro6-4.delta" sparkle:deltaFrom="4" length="6512154" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="v+GB36m7pHkTzdC6OCjTSebOdV2nI869EQswrLI/0nJJtQWCK5BKBPlPbuB4BqYQ6HRA29O8p7TXfZkenia6DQ=="/>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro6-3.delta" sparkle:deltaFrom="3" length="6693182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="cdj67DA7slDbEUNV2kToJXvNZ63cdjuWoI8NSSTIgj58oGdpbaP6x3KnZlX+qfyrGgfVjaCDOvRswPdFlcjvAA=="/>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro6-2.delta" sparkle:deltaFrom="2" length="6753954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="AAxP1EDxXjaNWQ7Mm6miY4tKWI7a8ixzM5VBY0ifRSXYynUx29eyA4p5dw2x3X46RAlcK6smaXck3/ABIK6lAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.10</title>
             <pubDate>Wed, 23 Sep 2026 13:47:07 +0200</pubDate>
             <sparkle:version>5</sparkle:version>
@@ -123,46 +257,6 @@
             <sparkle:deltas>
                 <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro4-3.delta" sparkle:deltaFrom="3" length="3281374" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hVjNokNAjh8dg+F+einFmBfck3yUCb2YXLb6iMgdPoG/arFn/fJ3f1xCJjWplg7KLmEY76GrnJV31JB0HiiSBQ=="/>
                 <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro4-2.delta" sparkle:deltaFrom="2" length="3640582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WNWUafTxQov91kLYlzt1/BCDjvd2gSAJ73Drt0C97eMWEad4e1e7U1lR9Eh+7GUTYN8FlFhju0gf90ZO3SwADw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Mon, 03 Aug 2026 10:12:21 +0200</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[## Nuove feature
-
-- Introdotta la gestione fiscale per Inarcassa: se sei iscritto alla cassa, l'app gestisce fatture, scadenze e accantonamenti con le regole giuste. In concreto:
-  - contributo integrativo del 4% addebitato in fattura, nel PDF e nell'XML per lo SdI, e tenuto fuori dal reddito imponibile dove non deve stare;
-  - card del regime con cassa, anno di prima iscrizione, agevolazione giovani, deroga dai minimi e rateizzazione in 6 rate;
-  - scadenzario e pagina Tasse sul calendario vero della cassa: rate dei minimi (2 o 6) e conguagli dell'anno successivo;
-  - data di nascita in anagrafica, così il limite dei 35 anni per l'agevolazione giovani lo verifica l'app invece di lasciartelo controllare a mano;
-  - toggle "committente estero" in fattura: verso UE ed extra-UE il contributo non è dovuto e non viene addebitato;
-  - il codice ATECO 71 (ingegneria e architettura) preseleziona Inarcassa al posto della Gestione Separata, e resta modificabile;
-  - le fatture già importate recuperano da sole il contributo dal proprio XML, che altrimenti resterebbe contato come reddito negli anni archiviati.
-- Aggiunto un campo "Ore da fatturare" alla rendicontazione delle attività, per quando serve tracciare ore divergenti tra effort effettivo ed effort fatturabile al cliente.
-
-## Miglioramenti
-
-- Stati e modifica delle fatture: la modifica è raggiungibile da drawer, doppio click e menu contestuale, una fattura "Emessa" ma non ancora trasmessa si può sbloccare per correggerla e ritrasmetterla con stesso numero e data, e ovunque vengono offerti solo i cambi di stato davvero permessi.
-- Corretto il layout delle card della pagina "Importa dati" nelle impostazioni: ora hanno tutte la stessa altezza e gli hint dicono quali valori sono ammessi in ogni colonna; il foglio Istruzioni è presente anche nei template xlsx degli import singoli, oltre a quello dell'intero sistema.
-- Pagina Backup riordinata: il "Punto di ripristino" pre-avvio è in cima, il backup automatico si attiva con uno switch, i testi non usano più gergo tecnico. Ora la gestione dei backup e il loro utilizzo dovrebbero risultare più chiari.
-- Riconciliati tutti i componenti "card" in un singolo componente. Nessuna differenza percepibile, solo un miglioramento tecnico e riduzione di codice.
-
-## Bug fix
-
-- L'extra budget di un progetto si somma al budget invece di sostituirlo, ed entra nel budget mostrato, nella soglia di consumo e nel budget ripartito tra le attività.
-- In Entrate, i giorni lavorativi personalizzati di un mese non vengono più sovrascritti dal valore da calendario quando riapri il drawer.
-- Il selettore degli anni in Entrate elenca gli anni delle fatture: chi importa fatture senza registrare ore non trova più il menu quasi vuoto.
-
-## Note
-
-- I parametri Inarcassa coprono dal 2024 in avanti. Per gli anni precedenti le fonti si contraddicono, quindi l'app dichiara "parametri non disponibili" invece di calcolare su numeri non verificati.
-]]></description>
-            <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro-0.8.dmg" length="8665503" type="application/octet-stream" sparkle:edSignature="iulIDd64KRwVP1+mM63c8s5pObjmszvNK1MmZ7pgYZCBfOxVmCHRNJXEIfqSSSQvSncoWqGme5ZefN1XiVunDQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro3-2.delta" sparkle:deltaFrom="2" length="1436810" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="utu4Eg+zUVbbXetEyBO1KzH00ZN+UA+pjuRFUgiyw1MCkBGB8WN/aHoEmrxs2z9MpWB8Q7f2oruIeFxGgbHpBA=="/>
             </sparkle:deltas>
         </item>
     </channel>
