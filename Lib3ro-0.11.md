@@ -59,7 +59,7 @@
 **Rifiniture delle tabelle:**
 
 - nelle colonne numeriche anche l'intestazione è allineata a destra;
-- eventuali tooltip compaiono dopo mezzo secondo di hover invece che dopo il lungo ritardo di default di sistema;
+- eventuali tooltip compaiono dopo un decimo di secondo di hover invece che dopo il lungo ritardo di default di sistema;
 - il separatore delle migliaia compare anche nei numeri a quattro cifre;
 - nel pannello del mese di Entrate i nomi lunghi dei clienti non vengono più troncati.
 
