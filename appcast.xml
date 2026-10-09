@@ -3,6 +3,41 @@
     <channel>
         <title>Lib3ro</title>
         <item>
+            <title>0.12</title>
+            <pubDate>Sat, 10 Oct 2026 00:44:03 +0200</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[### Miglioramenti
+
+**Impostazioni nella barra laterale:**
+
+- quando entri in Impostazioni, la barra laterale dell'app lascia il posto all'elenco delle schede, con «‹ Esci» in cima: non c'è più una seconda barra interna;
+- con «‹ Esci» o con Esc torni esattamente dov'eri, sezione, oggetto e pagine aperte comprese.
+
+**Pagina Aggiornamenti:**
+
+- il bottone Installa sta accanto al titolo della versione, non più in fondo alle note;
+- le note di rilascio si leggono con titoletti ed elenchi veri: dalla 0.10 comparivano come testo piatto con i simboli del markdown.
+
+### Bug fix
+
+**Crash critico all'apertura dell'app dopo l'aggiornamento alla 0.11:**
+
+- al primo avvio dopo l'aggiornamento alla 0.11 può capitare un crash dovuto alla migrazione degli stati di clienti e progetti. Ora si apre normalmente;
+- se ti è successo, installa questa versione dal file dmg (l'aggiornamento automatico non può partire dall'app che non si apre): i tuoi dati sono al loro posto;
+- la stessa migrazione può aver riportato ad «Attivo» lo stato che avevi scelto per clienti e progetti in pausa o chiusi: fai attenzione, controllali e reimpostali.
+]]></description>
+            <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro-0.12.dmg" length="10784496" type="application/octet-stream" sparkle:edSignature="RFbdx221/2WE5hSLakx8ylDTqHjDA7IwegBkOhHehAvd9/gsRwJwKfQkAlNlfTU/s06x9s3vh8LC96ldxmcaBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro7-6.delta" sparkle:deltaFrom="6" length="1183110" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="AlGQ6GUevsD4WWAtJUYSxj/kV2QFe3Z2P6Tm+D9+qi7ycMjNi3bHIzJj6AHh/fhOj09ubh1sVdtapan5WAKRAA=="/>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro7-5.delta" sparkle:deltaFrom="5" length="3056666" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="G2OHF0FXO6aXP/7cx4cfim0XOWVS5pqnvSOYNANEF1FNPTIEV1yFFjMYz/GigQy2mTzULWmertwEec84RF3nAg=="/>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro7-4.delta" sparkle:deltaFrom="4" length="6550906" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sihesJtbAOuDZM1uX7UsWr1P1+vor8xq84dHD6Wiz5NCtldfmbDntKTbjn6iHVGZFvBWhZAHgD7B8ImEKOh3Dw=="/>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro7-3.delta" sparkle:deltaFrom="3" length="6718686" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kM08qz+9sX8DYUXP8FU1YMNfJSBagdW66F9TvXACsWNSHFQzd8Lix5MV+j4dSa4svS3H7J4fT1PE0eegFcZPDA=="/>
+                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro7-2.delta" sparkle:deltaFrom="2" length="6774742" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9ukOj6WQm38ZnC70sx2g581q7rnFZXTL3jY02xLuPt7/7+cKvIqtf1Xl2XZMtM9dCkvOfFRK4s6X6fSIIdz6Dg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.11</title>
             <pubDate>Wed, 07 Oct 2026 16:12:32 +0200</pubDate>
             <sparkle:version>6</sparkle:version>
@@ -209,54 +244,6 @@
                 <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro5-4.delta" sparkle:deltaFrom="4" length="5787510" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="y9FptUrKM3r92I2igyfIiDAt+ullQAbOAur9obH+C6jviuZ3PPYcz4cYqntBQJLWCopS1vct7Fb62mkLbXfJAg=="/>
                 <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro5-3.delta" sparkle:deltaFrom="3" length="6006622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="CFjWIEMAy5VaNMr1XQ8fUbZuBwFD9CtLBtPVAXNOx+njwHR2VHynngq3F9T2p4lcwSLZVM58Qs2IzKcVn5ZAAw=="/>
                 <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro5-2.delta" sparkle:deltaFrom="2" length="6090734" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="z0o0K+D5nbkzgi8fYhs9tsSbxUalVoC5Wuvn+4tIJPDDH58VcfaYdA+psC+s/8hHk3e/Ma6ivZBCPXXHVIzMAQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9</title>
-            <pubDate>Tue, 25 Aug 2026 14:33:20 +0200</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[## Nuove feature
-
-- **Supporto cassa professionale EPPI** — se sei iscritto alla cassa dei periti industriali, l'app calcola contributi e scadenze con le sue regole, come già fa per Inarcassa e la Gestione Separata:
-  - addebita il contributo integrativo in fattura, e calcola acconti al 35% e saldo con la dichiarazione;
-  - mostra scadenzario e pagina Tasse sul calendario di versamento della cassa, così sai quanto accantonare e per quando;
-  - dalla card del regime imposti riduzione giovani (anche nella variante potenziata), aliquota soggettiva opzionale, tetto sul contributo soggettivo e minimo ridotto;
-  - applica i parametri ufficiali dal 2015 al 2026, quindi anche gli anni già archiviati risultano calcolati con i valori giusti;
-  - con un codice ATECO da perito industriale ti propone EPPI invece della Gestione Separata, e puoi cambiarla.
-- **Gestione multi-tab con pannelli nativi macOS** — con ⌘T apri un nuovo pannello e tieni più contesti di lavoro aperti nella stessa finestra, ognuno con la propria navigazione; dalla barra in cima vedi cosa contiene ciascuno e ci passi con un click. Chiudendo l'app ritrovi gli stessi pannelli alla riapertura, con l'oggetto che stavi guardando nel drawer.
-- **Validazione dei campi ed errori** — l'app ti segnala i dati sbagliati mentre compili invece di farti scoprire il problema all'invio, e ti avvisa quando un'operazione non riesce:
-  - su P.IVA, codice fiscale, IBAN, CAP, provincia, codice SDI, ATECO, email e telefono ricevi un messaggio che spiega qual è l'errore e come correggerlo, e solo dopo che hai finito di scrivere il campo;
-  - se il campo da correggere è in una sezione chiusa, al salvataggio l'app apre la sezione e ti porta sul campo, senza farti cercare dov'è l'errore;
-  - aprendo il Profilo dalla nuova fattura non perdi quello che avevi già compilato: al ritorno ritrovi la bozza;
-  - ricevi un avviso quando un backup non riesce, quando il controllo aggiornamenti fallisce (prima l'app rispondeva «Sei aggiornato»), quando l'import CSV scarta delle righe e quando un file FatturaPA non contiene i dati attesi;
-  - se un download fallisce durante l'import, l'operazione si ferma e non ti ritrovi duplicate le fatture già importate.
-- **Sistema di notifiche** — dopo ogni eliminazione, creazione, cambio di stato, copia o export ricevi una conferma in basso di cosa è appena successo, con il promemoria che puoi annullare con ⌘Z.
-- **Drag & drop per importare file** — importi fatture elettroniche, XLSX di sistema, estratti conto e portafoglio investimenti trascinando il file nell'app, senza passare dal pannello di import. Il file viene indirizzato alla sezione giusta in base al contenuto, e se non è utilizzabile ricevi il motivo.
-
-## Miglioramenti
-
-- **Menu contestuali e azioni sugli oggetti** — raggiungi le stesse azioni da tre punti: tasto destro (menu riordinato in tre sezioni con icone, con Duplica su progetti e attività), menu di sistema (Nuovo, Vai, Impostazioni, Vista, Aiuto) e ⌘K, da cui esegui l'azione direttamente sull'oggetto trovato senza doverlo aprire.
-- **Creazione fattura da un cliente** — dalla scheda cliente crei la fattura con le sue attività da fatturare già inserite, senza selezionarle una per una.
-- **Bottoni che non si spengono** — «Crea», «Aggiungi» e «Genera» restano sempre premibili: premendoli scopri quali campi mancano, invece di dover indovinare perché il bottone è disabilitato.
-- **Lavori incompleti salvabili** — puoi creare e salvare un oggetto anche senza avere tutti i dati, tenerlo come bozza e completarlo più avanti: un progetto in trattativa prima di conoscerne il prezzo, una transazione di cui non hai ancora l'importo, un pagamento senza importo atteso, un'attività segnaposto da valorizzare in seguito.
-- **Parametri storici Inarcassa completi** — calcoli contributi e accantonamenti anche sugli anni dal 2015 in poi, dove prima l'app copriva solo dal 2024; quattro valori storici sono stati corretti.
-
-## Bug fix
-
-- **Progetti "A corpo"** — ora puoi creare un progetto a corpo: il bottone «Crea» restava disabilitato anche con tutti i campi compilati.
-- **Carosello dell'onboarding** — durante l'onboarding scorre solo il pannello, mentre prima si muoveva anche la colonna laterale.
-- **Eliminazione da tasto destro** — eliminando da tasto destro ti viene chiesta la stessa conferma del resto dell'app, così non cancelli per sbaglio.
-
-## Note
-
-- **Aggiornamenti incrementali** — aggiornando dalla 0.8 alla 0.9 scarichi solo le differenze rispetto alla versione installata invece dell'app intera: il file differenziale ora viene pubblicato insieme al rilascio.
-]]></description>
-            <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro-0.9.dmg" length="9181664" type="application/octet-stream" sparkle:edSignature="S6WVoImt4qeh06Nr1B7p1FwXJjws43zwqthT4/aUkiuxzYfGRCUABNYYz5GxAHwCeXFpF2nRztDb+7IjqogOAg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro4-3.delta" sparkle:deltaFrom="3" length="3281374" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hVjNokNAjh8dg+F+einFmBfck3yUCb2YXLb6iMgdPoG/arFn/fJ3f1xCJjWplg7KLmEY76GrnJV31JB0HiiSBQ=="/>
-                <enclosure url="https://raw.githubusercontent.com/TobiaMarconi/Lib3ro-releases/main/Lib3ro4-2.delta" sparkle:deltaFrom="2" length="3640582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WNWUafTxQov91kLYlzt1/BCDjvd2gSAJ73Drt0C97eMWEad4e1e7U1lR9Eh+7GUTYN8FlFhju0gf90ZO3SwADw=="/>
             </sparkle:deltas>
         </item>
     </channel>
